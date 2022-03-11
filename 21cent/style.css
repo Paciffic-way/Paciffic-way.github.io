@@ -1,0 +1,9 @@
+@font-face {
+    font-family: '21 Cent';
+    src: local('21 Cent Condensed Ultra Light Italiс'), local('21-Cent-Condensed-Ultra-Light-Italiс'),
+        url('21CentCondensed-UltraLightItali.woff2') format('woff2'),
+        url('21CentCondensed-UltraLightItali.woff') format('woff'),
+        url('21CentCondensed-UltraLightItali.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
