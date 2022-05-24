@@ -58,7 +58,7 @@
         <div
           data-lax-translate-y="0 0,422 -100"
           data-lax-opacity="0 1, 100 1, 600 0"
-          class="lax title-wrapper"
+          class="lax title-wrapper lax_preset_slideY:1091:-333"
         >
           <span class="circle"></span>
           <h1 id="paciffic">Paciffic</h1>
@@ -114,11 +114,9 @@
         </div>
 
         <div class="work-img">
-          <p
-            class="lax description-text"
-            data-lax-translate-y="vh 50, 0 -80"
-            data-lax-opacity="vh 0, vh 0, 400 1" 
-            data-lax-anchor="self"
+          <p class="lax description-text lax_preset_slideY:622:133"
+            
+          
           >
             It was popularised in the 1960s with the release, including versions
             of Lorem Ipsum.
@@ -130,8 +128,7 @@
             </div>
           </div>
 
-          <p
-          class="lax description-text"
+          <p class="lax description-text lax_preset_slideY:1287:342"
           data-lax-translate-y="vh 50, 0 -80"
           data-lax-opacity="vh 0, vh 0, 400 1" 
           data-lax-anchor="self"
@@ -284,6 +281,10 @@
         });
       });
 
+
+
+
+
       // var tStart2 = 600 // Start transition 100px from top
       //   , tEnd2 = 1200   // End at 500px
       //   , cStart2 = [255, 255, 255]  // White
@@ -373,6 +374,30 @@
           x.className = "mob-navbar";
         }
       }
+
+
+
+      window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+
+  
+
     </script>
   </body>
 </html>
